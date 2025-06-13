@@ -15,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${inter.className} bg-slate-100`}>{children}</body>
+      <body className={`${inter.className} bg-slate-100 flex`}>
+        <main className="flex-1">{children}</main>
+      </body>
     </html>
   );
 }
